@@ -36,6 +36,7 @@ jobs:
           command: |
             . venv/bin/activate
             python app.py test
+	    pip install -r requirements.txt
 
       - store_artifacts:
           path: test-reports
